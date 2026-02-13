@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>French UBL Invoice Generator</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; max-width: 900px; }
+    textarea { width: 100%; min-height: 380px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    button { margin-top: 1rem; padding: 0.6rem 1rem; }
+    pre { background: #111; color: #ddd; padding: 1rem; overflow: auto; }
+  </style>
+</head>
+<body>
+  <h1>French UBL Invoice Generator (EN16931 / CIUS-FR oriented)</h1>
+  <p>Edit the payload and generate a UBL 2.1 XML invoice.</p>
+
+  <textarea id="payload"></textarea>
+  <button id="generate">Generate XML</button>
+
+  <h2>Generated Invoice XML</h2>
+  <pre id="output"></pre>
+
+  <script src="/app.js"></script>
+</body>
+</html>
